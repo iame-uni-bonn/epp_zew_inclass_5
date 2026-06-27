@@ -1,0 +1,27 @@
+[tool.pixi.workspace]
+name = "epp_zew_session_5"
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
+channels = ["conda-forge", "nodefaults"]
+
+[tool.pixi.dependencies]
+ipykernel = ">=6.29"
+openpyxl = "*"
+pandas = ">=2.2"
+plotly = "*"
+pyarrow = ">=19.0"
+pytask = ">=0.5"
+python = "~=3.13"
+
+[tool.pixi.pypi-dependencies]
+pdbp = "*"
+
+[tool.pixi.target.unix.pypi-dependencies]
+kaleido = "*"
+
+[tool.pixi.target.win-64.pypi-dependencies]
+kaleido = "==0.1.0.post1"
+
+[tool.pytask.ini_options]
+paths = ["."]
+ignore = [".pixi"]
+pdbcls = "pdbp:Pdb"
