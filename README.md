@@ -1,4 +1,4 @@
-# EPP ZEW 2026 - In-Class Exercises 5
+# EPP ZEW 2026: Exercises for session 5
 
 Make sure you run things with the local pixi environment, defined in
 [`pyproject.toml`](/pyproject.toml).
